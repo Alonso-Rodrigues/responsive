@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(119, 167, 208)
+}
+/* ------|MENU|------ */
+h1, h2{
+    text-align: center;
+    
+}
+.principal{
+    width: 1200px;
+    height: 1600px;
+    margin: auto;
+    border: 0.2rem solid white;
+    background-color:beige;
+    text-align: center;
+}
+.menu{
+   padding: 30px;
+   border: 0.3rem solid white  
+} 
+@media screen and (max-width:800px){
+    header{
+        display: none;
+    }
+}
+/* ------------------------- */
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+.article{
+    margin: 15px 0;
+    
+}
+
+@media screen and (max-width:640px) {
+    .container {
+        display: block;
+        margin: 0;
+    }
+    .article {
+        margin: 10px 0;
+    } 
+}
