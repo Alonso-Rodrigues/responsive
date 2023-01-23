@@ -2,48 +2,110 @@
     padding: 0;
     margin: 0;
 }
+/* -------------------------------------- */
+header{
+    background-image: url("../img/start.jpg");
+    width: auto;
+    height: 200px;
+    margin: 5px;
+}
+nav{
+    margin: 20px;
+}
+
+h1, h2{
+    text-align: center;  
+}
+/* -------------------------------------- */
 body{
     background-color: rgb(119, 167, 208)
 }
-/* ------|MENU|------ */
-h1, h2{
-    text-align: center;
-    
+header{
+    display: none;
 }
-.principal{
-    width: 1200px;
-    height: 1600px;
-    margin: auto;
-    border: 0.2rem solid white;
-    background-color:beige;
-    text-align: center;
+article{
+    background-color: beige;
+    margin: 3px;
+    text-align: justify;
 }
-.menu{
-   padding: 30px;
-   border: 0.3rem solid white  
-} 
-@media screen and (max-width:800px){
+
+/* -------------------------------------- */
+
+@media screen and (min-width:800px) {
     header{
+        display: block;
+    }
+}
+@media screen and (min-width: 640px){
+    section{
+        display: flex;
+        margin: 30px;
+    }
+
+}
+@media screen {
+    footer {
         display: none;
     }
 }
-/* ------------------------- */
-.container{
-    display: flex;
-    justify-content: center;
-    margin: 15px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section{
+    margin: 10px;
+
 }
-.article{
-    margin: 15px 0;
-    
+article{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+p{  
+    display: flex;
+    flex-wrap: wrap;
+    background-color: beige;
+    margin: 5px;
+    flex: 1 0 200px;
+}
+aside{
+    display: flex;
+    flex: 2 0 auto;
+    flex-basis: 100px;
 }
 
-@media screen and (max-width:640px) {
-    .container {
-        display: block;
-        margin: 0;
-    }
-    .article {
-        margin: 10px 0;
-    } 
-}
+footer{
+   border: solid;
+   flex: 2 0 auto;
+   width: auto;
+   height: 80px;
+} */

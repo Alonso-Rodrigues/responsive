@@ -44,8 +44,8 @@ ul a:hover{
 
 /* ------|Footer|------ */
 footer{
-    padding: 45px;
     background-color:rgb(58, 148, 157);
+    padding: 45px;
 }
 .resp{
     color: white;
