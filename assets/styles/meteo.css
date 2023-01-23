@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(119, 167, 208)
+}
+/* ----------------|Accueil|--------------------- */
+#responsive{
+    background-image: url(../img/start.jpg);
+    height: 100px;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    margin: 3px;
+}
+#accueil{
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+/* ----------------------------------------------- */
+h2{
+    text-align: center;
+}
+p{
+    font-size: 20px ;
+    color: darkslategrey;
+}
+div{
+    text-align: center;
+}
+#titreNY{
+    font-size: 45px;
+    font-weight: 200;
+    font-family: sans-serif;
+}
+img, #cinqhuit{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 4em;
+}
+.info{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.tuesday{
+    display: inline-block;
+    vertical-align: middle;
+    font-family: sans-serif;
+    font-size: 1em;
+    
+}
+
+.today, .wednesday, .thursday, .friday, .saturday,
+.sunday, .monday{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 3%;
+}
+
+/* ------------------|Responsive|------------------- */
+@media screen and (min-width:480px) {
+    
+    .today, .wednesday, .thursday, .friday, .saturday,
+    .sunday, .monday{
+        flex-direction: column;
+    }
+}
+ @media screen and (min-width: 1024px){
+    .today, .wednesday, .thursday, .friday, .saturday,
+    .sunday, .monday{
+        flex-direction: column;
+    
+    }
+    div{
+        margin: 10px;
+    }
+    
+    hr{
+        display: none;
+    }
+    
+}
+
+
