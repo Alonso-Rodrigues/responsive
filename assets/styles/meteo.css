@@ -14,76 +14,106 @@ body{
     font-family: sans-serif;
     text-align: center;
     color: white;
-    margin: 3px;
 }
 #accueil{
     font-size: 20px;
     color: white;
     font-family: sans-serif;
 }
-/* ----------------------------------------------- */
-h2{
-    text-align: center;
-}
-p{
-    font-size: 20px ;
-    color: darkslategrey;
-}
-div{
-    text-align: center;
-}
-#titreNY{
-    font-size: 45px;
-    font-weight: 200;
-    font-family: sans-serif;
-}
-img, #cinqhuit{
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 4em;
-}
-.info{
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.tuesday{
-    display: inline-block;
-    vertical-align: middle;
-    font-family: sans-serif;
-    font-size: 1em;
-    
-}
-
-.today, .wednesday, .thursday, .friday, .saturday,
-.sunday, .monday{
-    display: inline-block;
-    vertical-align: middle;
-    margin: 3%;
-}
-
 /* ------------------|Responsive|------------------- */
-@media screen and (min-width:480px) {
-    
-    .today, .wednesday, .thursday, .friday, .saturday,
-    .sunday, .monday{
-        flex-direction: column;
-    }
-}
- @media screen and (min-width: 1024px){
-    .today, .wednesday, .thursday, .friday, .saturday,
-    .sunday, .monday{
-        flex-direction: column;
-    
-    }
-    div{
-        margin: 10px;
-    }
-    
-    hr{
+@media screen and (max-width:999px){
+    #responsive, #accueil{
         display: none;
     }
-    
+    h1 {
+        margin: 0;
+        font-size: 50px;
+    }
+    .NY{
+        margin: 0;
+        font-size: 30px;
+    }
+    .tempWeather{
+        display: inline-block;
+        width: 100%;
+    }
+    #info{
+        display: inline-block;
+        width: 20%;
+        margin: 5px;
+        font-size: 30px;
+        font-family: sans-serif;
+    }
+    #tempF{
+        display: inline-block;
+        font-weight: bold;
+        font-size: 60px;
+        width: 40%;
+    }
+    .day{
+        display: inline-block;
+        width: 15%;
+        font-weight:bold;
+        font-family: sans-serif;
+    }
+    .weatherImg{
+        display: inline-block;
+        vertical-align: middle;
+        width: 15%;
+    }
+    .weather{
+        display: inline-block;
+        width: 20%;
+    }
+    .subWeather{
+        display: inline-block;
+        width: 15%;
+        margin-left: 30%;
+    }
 }
-
-
+/* ----------------------------------------------------- */
+@media screen and (min-width:1000px){
+    h1 {
+        margin: 0;
+        font-size: 50px;
+    }
+    p {
+        margin: 0;
+    }
+    #tempF{
+        position: relative;
+        width: 40%;
+        top: -100px;
+        margin-left: 150px;
+        display: inline-block;
+        font-weight: bold;
+        font-size: 60px;    
+    }
+    #info{
+        display: inline-block;
+        position: relative;
+        top: -260px;
+        margin-left: 1200px;
+    }
+    
+    section p {
+        font-size: 30px;
+        font-family: sans-serif;
+        margin: 20px;
+        
+    }
+    hr {
+        display: none;
+    }    
+    section {
+        display: inline-block;
+    }
+    .container-day{
+        position: relative;
+        top: -200px;
+        display: inline-block;
+        margin: 0 30px;
+        margin-left: -200;
+    }
+ 
+}
