@@ -30,9 +30,6 @@ span{
 }
 /* ------------------|Responsive|------------------- */
 @media screen and (max-width:999px){
-    header{
-        display: none;
-    }
     h1 {
         font-size: 50px;
     }
@@ -62,7 +59,32 @@ span{
         margin-bottom: 30px;
         font-size: 30px;
     }
+    .sunny{
+        position: relative;
+        display: inline-block;
+        animation-name: sol;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-duration: 2.5s; 
+        left: 40px;
+        }
+    @keyframes sol{   
+        0%{
+            transform: rotate(90deg);
+        }
+        100%{
+            transform: rotate(180deg);
+        }
+    }
+    .pollen{
+        font-weight: bold;
+    }
+    .fit{
+        position: relative;
+        left: 100px;
+    }
 }
+
 /* ----------------------------------------------------- */
 @media screen and (min-width:1000px){
     h1 {
@@ -89,17 +111,40 @@ span{
     }
     #info{
         position: relative;
-        width: 20%;
+        width: 30%;
         font-size: 30px;
-        margin-left: 60%;
-        margin-top: -5%;
+        margin-left: 65%;
+        top: -80px; 
+    }
+    section{
+        position: relative;
+        display: inline-block;
+        margin: 0 50px;
+        text-align: center;
+        top: -60px;
+        float: left;
     }
     .sub-day{
+       
         font-size: 30px;
     }
-    section {
-        display: inline-block;
-        margin:  40px;
-        text-align: center;
+    .pollen{
+        font-weight: bold;
     }
-}  
+    .sunny{
+        text-align: center;
+        display: inline-block;
+        animation-name: sol;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-duration: 2.5s; 
+        }
+    @keyframes sol{   
+        0%{
+            transform: rotate(90deg);
+        }
+        100%{
+            transform: rotate(180deg);
+        }  
+    }
+}
