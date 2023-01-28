@@ -25,22 +25,45 @@ body{
 h1{
     text-align: center;
 }
+h2{
+    text-align: left;
+}
 
 #the_dog{
-   position: absolute;
-   top: 20%;
-   left: 40%;
+    display: inline-block;
+    position: relative;
+    top: 45%;
+    left: 46%;
 }
 nav{
     text-align: center;
-    margin-top: 25%;
+    margin-top: 20px;
 }
 nav li {
-    border: solid;
     display: inline-block;
     width: 100px;
     height: 30px;
-    border-radius: 20px;
+    border: solid;
+    border-radius: 40px;
     margin: 20px;
     padding: 20px;
 } 
+/* ----------------------------------------- */
+.container_article{
+    width: 100%;
+    margin: 0 5%;
+}
+article, img{
+    margin: 3px;
+    float: left;
+    width: 30%;
+}
+article{
+    display: inline-block;
+    width: 20%;
+    margin: 0 80px;
+    text-align: center;
+    background-color: grey;
+    padding: 12px;
+    border-radius: 15px;
+}
