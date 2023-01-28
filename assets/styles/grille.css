@@ -22,3 +22,25 @@ body{
     font-family: sans-serif;
 }
 /* ----------------------------------------------- */
+h1{
+    text-align: center;
+}
+
+#the_dog{
+   position: absolute;
+   top: 20%;
+   left: 40%;
+}
+nav{
+    text-align: center;
+    margin-top: 25%;
+}
+nav li {
+    border: solid;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+} 
